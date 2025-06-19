@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+body {
+    font-family: 'Roboto Condensed', Tahoma;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.container{
+    width: 800px;
+    height: 1000px;
+    background-color: antiquewhite;
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 1200px;
+    
+}
+
+.block-left{
+    width: 350px;
+    height: 1000px;
+    background-color: rgb(227, 87, 87);
+    flex: 0 0 45%;
+    max-width: 45%;
+    padding: 10px;
+}
+
+.block-right{
+    width: 450px;
+    height: 1020px;
+    background-color: #272b2e;
+    flex: 0 0 60%;
+    max-width: 60%;
+    position: relative;
+    
+    
+}
+.block-left #a-left1 img{
+    width: 100%;
+    max-width: 350px;
+    border: 5px solid white;
+   
+}
+.block-left h1 a{
+    margin: 0;
+    line-height: 1.3;
+    font-size: 20px;
+    padding: 25px 25px;
+    text-decoration: none;
+    color: white;
+    outline: none;
+    font-weight: 500;
+}
+.block-left span{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.block-left p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    unicode-bidi: isolate;
+    color: #e4dada;
+}
+
+.block-left p{
+    padding-top: 25px;
+    color: #e4dada;
+}
+
+.block-right .right1{
+    width: 100%;
+    max-height: 130px;
+    height: 15%;
+    padding: 10px 0 10px 15px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+.block-right .right1 figure{
+    flex: 0 0 160px;
+    max-width: 160px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.right1 figure a img {
+    width: 100%;
+    border: 4px solid #fff;
+}
+
+.block-right .right1:not(:last-child)::after {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 97%;
+    height: 1px;
+    background: #a9161c;
+}
+
+
+.block-right .right1 .new_info{
+    padding-left: 12px;
+    height: 140px;
+    width: 275px;
+}
+.block-right .right1 .new_info span,
+.block-right .right1 .new_info p{
+    margin-top: 10px;
+    color: #c3c2c2;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.block-right .right1 .new_info h3{
+    margin: 0;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.block-right .right1 .new_info h3 a{
+    padding-top: 5px;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+}
+
+.block-right .right1 .new_info h3 a:hover{
+    text-decoration: underline;
+
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
